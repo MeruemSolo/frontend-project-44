@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import isPrime from './utils.js
+import isPrime from './utils.js'
 
 export const brainPrime = () => {
     console.log('Welcome to the Brain Games!');
