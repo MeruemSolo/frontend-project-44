@@ -10,7 +10,8 @@ export const brainGcd = () => {
   for (let i = 0; i < 3; i += 1) {
     let randomNumber1 = Math.floor(Math.random() * 50 + 1);
     let randomNumber2 = Math.floor(Math.random() * 50 + 1);
-    console.log(`${randomNumber1} ${randomNumber2}`);
+    const quest = console.log(`${randomNumber1} ${randomNumber2}`);
+    console.log(quest);
     const userAnswer = readlineSync.question('Your answer: ');
     function NOD (x, y) {
       if (y > x) return NOD(y, x);
