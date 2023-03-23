@@ -10,17 +10,17 @@ const brainPrime = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = Math.floor(Math.random() * 100 + 1);
     console.log(`Question: ${randomNumber}`);
-    const isPrime = (randomNumber) => {
-      if (randomNumber <= 1) {
+    const isPrime = (num) => {
+      if (num <= 1) {
         return false;
       }
-      for (let j = 2; j <= Math.sqrt(randomNumber); j += 1) {
-        if (randomNumber % j === 0) {
+      for (let j = 2; j <= Math.sqrt(num); j += 1) {
+        if (num % j === 0) {
           return false;
         }
       }
       return true;
-    }
+    };
     const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {

@@ -16,7 +16,7 @@ const brainGCD = () => {
       if (y > x) return NOD(y, x);
       if (!y) return x;
       return NOD(y, x % y);
-    }
+    };
     const correctAnswer = String(NOD(randomNumber1, randomNumber2));
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
