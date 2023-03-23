@@ -25,4 +25,9 @@ export const question = () => {
 }
 export const correctanswer = ({ correctPoint }) => String(correctPoint)
 const brainProgression = () => { brainlogic(gameDescription, question, correctanswer) }
+function getWindowHeight() {
+  return window.innerHeight;
+}
+
+getWindowHeight();
 export default brainProgression()

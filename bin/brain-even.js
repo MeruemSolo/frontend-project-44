@@ -32,5 +32,12 @@ export const brainEven = () => {
       console.log(`Congratulations, ${name}!`)
     }
   }
+};
+
+function getWindowHeight() {
+  return window.innerHeight;
 }
+
+getWindowHeight();
+
 brainEven()

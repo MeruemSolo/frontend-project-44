@@ -29,4 +29,10 @@ export const brainGcd = () => {
     }
   }
 }
+
+function getWindowHeight() {
+  return window.innerHeight;
+}
+
+getWindowHeight();
 brainGcd()
