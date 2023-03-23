@@ -34,10 +34,4 @@ export const brainEven = () => {
   }
 };
 
-function getWindowHeight() {
-  return window.innerHeight;
-}
-
-getWindowHeight();
-
 brainEven()

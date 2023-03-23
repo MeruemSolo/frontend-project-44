@@ -35,10 +35,4 @@ const brainCalc = () => {
   }
 };
 
-function getWindowHeight() {
-  return window.innerHeight;
-}
-
-getWindowHeight();
-
 export default brainCalc();
