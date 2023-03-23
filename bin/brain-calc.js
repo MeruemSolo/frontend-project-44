@@ -22,7 +22,8 @@ const brainCalc = () => {
         default: return null;
       }
     };
-    const correctAnswer = String(calcArithmeticOperation(randomOperator, randomNumber1, randomNumber2));
+    const correctAnswer = String(
+      calcArithmeticOperation(randomOperator, randomNumber1, randomNumber2));
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {

@@ -1,37 +1,37 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync'
+import readlineSync from 'readline-sync';
 
-export const brainEven = () => {
-  console.log('Welcome to the Brain Games!')
-  const name = readlineSync.question('May I have your name?: ')
-  console.log(`Hello, ${name}!`)
-  console.log('Answer "yes" if the number is even, otherwise answer "no".')
+export default brainEven = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name?: ');
+  console.log(`Hello, ${name}!`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
-    const randomNumber = Math.floor(Math.random() * 100 + 1)
-    const isEven = (randomNumber % 2 === 0 ? 'yes' : 'no')
-    console.log(`Question: ${randomNumber}`)
-    const answer = readlineSync.question('Your answer: ')
-    let result
+    const randomNumber = Math.floor(Math.random() * 100 + 1);
+    const isEven = (randomNumber % 2 === 0 ? 'yes' : 'no');
+    console.log(`Question: ${randomNumber}`);
+    const answer = readlineSync.question('Your answer: ');
+    let result;
     switch (answer) {
       case 'yes':
-        result = (isEven === 'yes')
-        break
+        result = (isEven === 'yes');
+        break;
       case 'no':
-        result = (isEven === 'no')
-        break
+        result = (isEven === 'no');
+        break;
       default:
-        result = false
+        result = false;
     }
     if (result === false) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven}'.\nLet's try again, ${name}!`)
-      break
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven}'.\nLet's try again, ${name}!`);
+      break;
     }
-    console.log('Correct!')
+    console.log('Correct!');
     if (i === 2) {
-      console.log(`Congratulations, ${name}!`)
+      console.log(`Congratulations, ${name}!`);
     }
   }
 };
 
-brainEven()
+brainEven();
