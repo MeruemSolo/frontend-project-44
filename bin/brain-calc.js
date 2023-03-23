@@ -14,7 +14,7 @@ const brainCalc = () => {
     const randomOperator = operators[Math.floor(Math.random() * 3)];
     console.log(`Question: ${randomNumber1} ${randomOperator} ${randomNumber2}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    const calcArithmeticOperation = (symbol, firstValue, secondValue) => {
+    const calcArOp = (symbol, firstValue, secondValue) => {
       switch (symbol) {
         case '+': return firstValue + secondValue;
         case '-': return firstValue - secondValue;
@@ -22,8 +22,7 @@ const brainCalc = () => {
         default: return null;
       }
     };
-    const correctAnswer = 
-      String(calcArithmeticOperation(randomOperator, randomNumber1, randomNumber2));
+    const correctAnswer = String(calcArOp(randomOperator, randomNumber1, randomNumber2));
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
