@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync'
+import readlineSync from 'readline-sync';
 export const brainCalc = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?: ');
@@ -24,11 +24,11 @@ export const brainCalc = () => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`)
-      break
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
+      break;
     };
     if (i === 2) {
-      console.log(`Congratulations, ${name}!`)
+      console.log(`Congratulations, ${name}!`);
     };
   };
 };
