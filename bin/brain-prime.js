@@ -15,7 +15,7 @@ export const brainPrime = () => {
         return false;
       }
       for (let j = 2; j <= Math.sqrt(randomNum); j += 1) {
-        if (randomNum % i === 0) {
+        if (randomNum % j === 0) {
           return false;
         }
       }
