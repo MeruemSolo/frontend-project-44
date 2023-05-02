@@ -8,8 +8,8 @@ export const brainPrime = () => {
   console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
   for (let i = 0; i < 3; i += 1) {
-    const randomNumber = Math.floor(Math.random() * 100 + 1);
-    console.log(`Question: ${randomNumber}`);
+    const randomNum = Math.floor(Math.random() * 100 + 1);
+    console.log(`Question: ${randomNum}`);
     const isPrime = (randomNum) => {
       if (randomNum <= 1) {
         return false;
