@@ -21,7 +21,7 @@ export const brainPrime = () => {
       }
       return true;
     };
-    const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
+    const correctAnswer = isPrime(randomNum) ? 'yes' : 'no';
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
