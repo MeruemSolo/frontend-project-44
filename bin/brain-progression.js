@@ -20,7 +20,7 @@ export const question = () => {
   const arrow = startArr.join(' ');
   const expression = `${arrow}`;
   return {
-    expression, arrow, correctPoint;
+    expression, arrow, correctPoint
   }
 }
 export const correctanswer = ({ correctPoint }) => String(correctPoint);
