@@ -10,7 +10,7 @@ export default () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = Math.floor(Math.random() * 100 + 1);
     const isEven = (randomNumber % 2 === 0 ? 'yes' : 'no');
-    console.log(`Question: ${randomNumber}`);
+    console.log(`Question:${randomNumber}`);
     const answer = readlineSync.question('Your answer: ');
     let result;
     switch (answer) {
