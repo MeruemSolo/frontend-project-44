@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 
-export const brainGcd = () => {
+export default= () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?: ');
   console.log(`Hello, ${name}!`);
@@ -12,7 +12,7 @@ export const brainGcd = () => {
     const randomNumber2 = Math.floor(Math.random() * 50 + 1);
     console.log(`Question: ${randomNumber1} ${randomNumber2}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    function NOD (x, y) {
+    function NOD(x, y) {
       if (y > x) return NOD(y, x);
       if (!y) return x;
       return NOD(y, x % y);
@@ -26,7 +26,6 @@ export const brainGcd = () => {
     }
     if (i === 2) {
       console.log(`Congratulations, ${name}!`);
-    };
-  };
+    }
+  }
 };
-brainGcd();

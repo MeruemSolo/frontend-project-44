@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 
-export const brainEven = () => {
+export default = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?: ');
   console.log(`Hello, ${name}!`);
@@ -30,7 +30,6 @@ export const brainEven = () => {
     console.log('Correct!');
     if (i === 2) {
       console.log(`Congratulations, ${name}!`);
-    };
-  };
+    }
+  }
 };
-brainEven();

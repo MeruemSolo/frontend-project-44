@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 
-export const brainPrime = () => {
+export default = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?: ');
   console.log(`Hello, ${name}!`);
@@ -10,17 +10,17 @@ export const brainPrime = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = Math.floor(Math.random() * 100 + 1);
     console.log(`Question: ${randomNumber}`);
-    const isPrime = (randomNumber) => {
-      if (randomNumber <= 1) {
+    const isPrime = (randomNum) => {
+      if (randomNum <= 1) {
         return false;
       }
-      for (let i = 2; i <= Math.sqrt(randomNumber); i += 1) {
-        if (randomNumber % i === 0) {
+      for (let j = 2; j <= Math.sqrt(randomNum); j += 1) {
+        if (randomNum % i === 0) {
           return false;
         }
       }
       return true;
-    }
+    };
     const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
@@ -33,4 +33,3 @@ export const brainPrime = () => {
 
   console.log(`Congratulations, ${name}!`);
 };
-brainPrime();

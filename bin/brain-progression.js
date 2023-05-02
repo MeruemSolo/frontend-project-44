@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import brainlogic from '../src/index.js';
-import random from '../bin/utils.js';
+import random from './utils.js';
 
 export const gameDescription = 'What number is missing in the progression?';
 export const question = () => {
@@ -20,9 +20,9 @@ export const question = () => {
   const arrow = startArr.join(' ');
   const expression = `${arrow}`;
   return {
-    expression, arrow, correctPoint
-  }
-}
+    expression, arrow, correctPoint,
+  };
+};
 export const correctanswer = ({ correctPoint }) => String(correctPoint);
 const brainProgression = () => { brainlogic(gameDescription, question, correctanswer) };
 export default brainProgression();
