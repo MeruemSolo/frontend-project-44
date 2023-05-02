@@ -10,12 +10,12 @@ export const brainPrime = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNum = Math.floor(Math.random() * 100 + 1);
     console.log(`Question: ${randomNum}`);
-    const isPrime = (randomNum) => {
-      if (randomNum <= 1) {
+    const isPrime = (randomNumber) => {
+      if (randomNumber <= 1) {
         return false;
       }
-      for (let j = 2; j <= Math.sqrt(randomNum); j += 1) {
-        if (randomNum % j === 0) {
+      for (let j = 2; j <= Math.sqrt(randomNumber); j += 1) {
+        if (randomNumber % j === 0) {
           return false;
         }
       }

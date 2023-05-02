@@ -8,7 +8,7 @@ export const brainCalc = () => {
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
     const ranNum1 = Math.floor(Math.random() * 50 + 1);
-    const ranNum2= Math.floor(Math.random() * 50 + 1);
+    const ranNum2 = Math.floor(Math.random() * 50 + 1);
     const operators = ['+', '-', '*'];
     const ranOper = operators[Math.floor(Math.random() * 3)];
     console.log(`Question: ${ranNum1} ${ranOper} ${ranNum2}`);

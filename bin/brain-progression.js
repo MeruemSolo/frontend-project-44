@@ -24,5 +24,5 @@ export const question = () => {
   };
 };
 export const correctanswer = ({ correctPoint }) => String(correctPoint);
-const brainProgression = () => { brainlogic(gameDescription, question, correctanswer) };
+const brainProgression = () => { brainlogic(gameDescription, question, correctanswer); };
 export default brainProgression();
