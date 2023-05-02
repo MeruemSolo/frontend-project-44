@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import brainlogic from '../src/index.js';
-import random from 'src/utils.js';
+import random from '../src/utils.js';
 
 export const gameDescription = 'What number is missing in the progression?';
 export const question = () => {
