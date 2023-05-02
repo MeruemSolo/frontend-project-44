@@ -6,7 +6,7 @@ export const brainGCD = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?: ');
   console.log(`Hello, ${name}!`);
-  console.log('Find the greatest common divisor of given numbers.')
+  console.log('Find the greatest common divisor of given numbers.');
   function NOD(x, y) {
     if (y > x) return NOD(y, x);
     if (!y) return x;
