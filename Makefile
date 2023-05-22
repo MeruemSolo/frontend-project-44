@@ -5,7 +5,7 @@ brain-games:
 publish:
 	npm publish --dry-run
 lint:
-	npx eslint
+	npm run eslint -- src
 brain-even:
 	node bin/brain-even.js
 brain-calc:
