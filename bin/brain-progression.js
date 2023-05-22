@@ -14,7 +14,7 @@ export const question = () => {
     startArr.push(item);
   }
   const point = '..';
-  const j = Math.floor(Math.getRandomInRange() * 6) + 1;
+  const j = Math.floor(Math.random() * 6) + 1;
   const correctPoint = startArr[j];
   startArr[j] = point;
   const arrow = startArr.join(' ');
