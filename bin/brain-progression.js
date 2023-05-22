@@ -5,8 +5,8 @@ import getRandomInRange from '../src/utils.js';
 
 export const gameDescription = 'What number is missing in the progression?';
 export const question = () => {
-  const num1 = random(1, 100);
-  const step = random(1, 100);
+  const num1 = getRandomInRange(1, 100);
+  const step = getRandomInRange(1, 100);
   const startArr = [num1];
   for (let i = 1; startArr.length <= 10; i += 1) {
     const item = startArr[i];
@@ -14,7 +14,7 @@ export const question = () => {
     startArr.push(item);
   }
   const point = '..';
-  const j = Math.floor(Math.random() * 6) + 1;
+  const j = Math.floor(Math.getRandomInRange() * 6) + 1;
   const correctPoint = startArr[j];
   startArr[j] = point;
   const arrow = startArr.join(' ');
