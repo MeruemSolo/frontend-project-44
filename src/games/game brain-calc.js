@@ -32,4 +32,4 @@ const brainCalc = () => {
     }
   }
 };
-export default brainCalc();
+export default brainCalc;

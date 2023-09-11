@@ -27,4 +27,4 @@ const brainGCD = () => {
     }
   }
 };
-export default brainGCD();
+export default brainGCD;

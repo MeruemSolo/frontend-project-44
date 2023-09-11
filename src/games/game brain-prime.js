@@ -31,4 +31,4 @@ const brainPrime = () => {
 
   console.log(`Congratulations, ${name}!`);
 };
-export default brainPrime();
+export default brainPrime;
