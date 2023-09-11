@@ -5,8 +5,8 @@ const brainLogic = (gameDescription, question, correctAnswer) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(gameDescription);
-
-  for (let i = 1; i <= 3; i += 1) {
+  let roundsCount = 3;
+  for (let i = 0; i < roundsCount; i++) {
     const questionNumber = question();
     const answer = readlineSync.question(`Question: ${questionNumber.expression} \nYour answer: `);
     const corrAnswer = correctAnswer(questionNumber);
